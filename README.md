@@ -4,7 +4,7 @@ C code to demonstrate how a buffer overflow works
 
 ## Pre-requisites
 
-This code works in C, therefore the gcc compiler is required _(as well as an IDE)_.
+This code works in C, therefore the gcc compiler is required _(as well as an IDE, but we all have that!)_.
 
 [Article on how to install gcc](https://phoenixnap.com/kb/install-gcc-windows)
 
