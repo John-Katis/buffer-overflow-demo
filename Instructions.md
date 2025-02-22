@@ -70,6 +70,7 @@ We have a C program that controls a safe, called `withdraw.c`. Our goals are to:
 8. Add padding by printing extra characters in the ‘open.c’ program before the address. Recompile the ‘open’ program and run it as the input for ‘withdraw’ program
 
     _8.1._ With how many padding did the safe open?
+    
     _8.2._ What happened?
 
 # Part II - Protection Mechanisms
