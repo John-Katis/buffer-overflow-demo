@@ -8,8 +8,6 @@ int main()
     // location(usually the case)
     char str1[10];
     char str2[25] = "Something meaningful";
-
-    printf("str1: %s\nstr2: %s", str1, str2);
     
     // reading strings
     printf("Enter the str1: ");
