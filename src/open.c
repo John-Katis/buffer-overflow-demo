@@ -8,9 +8,9 @@ int main() {
   // printf("\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01");
   
   for (i = 0; i < 1; i++)  
-  { 
-    printf("%c%c%c%c",'\x96','\x11','\x40','\x00');
-  }
+  {                                                   // &hola: '\x68','\x6f','\x6c','\x61'
+    printf("%c%c%c%c",'\x68','\x6f','\x6c','\x61');   // This is the return address
+  }                                                   // &open_safe: '\x96','\x11','\x40','\x00'
 }
 
 // To successfully perform the buffer overflow flood 26 bytes as such:
